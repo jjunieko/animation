@@ -1,0 +1,42 @@
+#play {
+    display: inline;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: center;
+    margin-left: 190px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.596);
+    border: 0;
+    padding: 6px 12px;
+    color: blue;
+    cursor: pointer;
+}
+
+#reiniciar {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.596);
+    border: 0;
+    padding: 6px 12px;
+    color: blue;
+    cursor: pointer;
+}
+
+#pause {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.596);
+    border: 0;
+    padding: 6px 12px;
+    color: blue;
+    cursor: pointer;
+}

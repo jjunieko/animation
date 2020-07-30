@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie_svg.min.js"></script>
+    <title>Lottie</title>
+
+</head>
+
+<body>
+
+    <div id="animation" style="width: 700px; height: 500px; display: block; align-items: center;">
+        <div id="lottie"> </div>
+        <button id="play">play</button>
+        <button id="reiniciar">reiniciar</button>
+        <button id="pause">pause</button>
+    </div>
+
+    <script>
+        const params = {
+            container: document.getElementById('lottie'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            path: '8307-love-icon-animation.json'
+        };
+
+        var anim;
+
+        anim = lottie.loadAnimation(params);
+        anim.goToAndStop(20, true);
+        document.getElementById('play').addEventListener('click', function() {
+            anim.play();
+        });
+        document.getElementById('reiniciar').addEventListener('click', function() {
+            anim.goToAndPlay(20, true);
+        });
+        document.getElementById('pause').addEventListener('click', function() {
+            anim.goToAndStop(20, true);
+        });
+    </script>
+
+</body>
+
+</html>
